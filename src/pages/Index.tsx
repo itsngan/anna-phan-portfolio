@@ -89,47 +89,33 @@ const tabContent = {
 
 const projects = [
   { 
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with cart management, payment processing, and order tracking.",
+    title: "Crochet Pattern Market Analysis",
+    description: "A data analysis project examining over 2000 datasets from Ravelry API to explore trends and consumer behavior in the crochet pattern market.",
     image: projectPlaceholder,
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
+    tags: ["Python", "Pandas","PowerBI", "Data Analysis"],
+    githubUrl: "https://github.com/itsngan/crochet-pattern-market-analysis",
+  },
+  {
+    title: "Hybrid Solar Irradiance Monitoring System",
+    description: "A group project for my Embedded Systems course where we researched andbuilt a solar irradiance monitoring system using the Raspberry Pi 3, integrated with multiple light sensors and a 3D printed QFH antenna.",
+    image: projectPlaceholder,
+    tags: ["Python", "Raspberry Pi", "Sensor Integration"],
+    githubUrl: "https://drive.google.com/file/d/1EdB7tyzrNqn9Iy7rwKe8e-gYvuM56Wmz/view?usp=drive_link",
+  },
+  {
+    title: "Cat Nutrition Analysis Dashboard",
+    description: "Currently developing a custom database of commercial cat food products for a web application that analyzes dietary and nutritional intake of a cat.",
+    image: projectPlaceholder,
+    tags: ["Python", "Pandas", "Streamlit"],
     githubUrl: "https://github.com",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative task manager with real-time updates, drag-and-drop, and team features.",
+    title: "Cruise Booking Database",
+    description: "Group project for my introduction to Database Management Systems course where we designed and implemented a relational database for a cruise booking system, including ER diagrams and SQL queries.",
     image: projectPlaceholder,
-    tags: ["TypeScript", "React", "Firebase", "Tailwind"],
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Weather Dashboard",
-    description: "A beautiful weather app with 7-day forecasts, interactive maps, and location search.",
-    image: projectPlaceholder,
-    tags: ["React", "OpenWeather API", "Chart.js"],
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Chat Application",
-    description: "Real-time messaging app with channels, direct messages, and file sharing.",
-    image: projectPlaceholder,
-    tags: ["Socket.io", "Express", "MongoDB", "React"],
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Portfolio Generator",
-    description: "A CLI tool that generates beautiful portfolio websites from a simple config file.",
-    image: projectPlaceholder,
-    tags: ["Node.js", "CLI", "Handlebars", "CSS"],
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Fitness Tracker",
-    description: "Track workouts, set goals, and visualize progress with interactive charts.",
-    image: projectPlaceholder,
-    tags: ["React Native", "GraphQL", "PostgreSQL"],
-    githubUrl: "https://github.com",
-  },
+    tags: ["MSSQL", "Database Design", "SQL"],
+    githubUrl: "https://drive.google.com/file/d/1U_sXB-TKJCTC5I-Xkz1p7y3jkaQlnbt9/view?usp=sharing://github.com",
+  }
 ];
 
 const Index = () => {
@@ -138,7 +124,7 @@ const Index = () => {
       {/* Title */}
       <header className="container mx-auto px-8 pt-12 lg:pt-16">
         <h1 className="text-4xl lg:text-5xl font-bold text-foreground">Anna Phan</h1>
-        <a href={resumePdf} target="_blank" rel="noreferrer" className="text-base lg:text-lg font-medium text-primary hover:underline mt-2 inline-flex items-center gap-2">
+        <a href="#" className="text-base lg:text-lg font-medium text-primary hover:underline mt-2 inline-flex items-center gap-2">
           Resume
           <ExternalLink className="w-4 h-4" />
         </a>
