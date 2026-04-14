@@ -11,7 +11,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ title, description, image, tags, githubUrl }: ProjectCardProps) => {
   return (
-    <div className="group rounded-2xl bg-card border border-border overflow-hidden transition-all duration-300 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5">
+    <div className="group rounded-2xl bg-card border border-border overflow-hidden transition-all duration-300 hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 flex flex-col">
       <div className="aspect-video overflow-hidden">
         <img
           src={image}
@@ -19,7 +19,7 @@ const ProjectCard = ({ title, description, image, tags, githubUrl }: ProjectCard
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
-      <div className="p-5 space-y-3">
+      <div className="p-5 flex flex-col gap-3 flex-1">
         <div className="flex items-start justify-between gap-2">
           <h3 className="text-lg font-semibold text-foreground">{title}</h3>
           <a
@@ -32,7 +32,7 @@ const ProjectCard = ({ title, description, image, tags, githubUrl }: ProjectCard
           </a>
         </div>
         <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
-        <div className="flex flex-wrap gap-1.5">
+        <div className="flex flex-wrap gap-1.5 mt-auto">
           {tags.map((tag) => (
             <Badge key={tag} variant="secondary" className="rounded-full text-xs font-normal">
               {tag}
